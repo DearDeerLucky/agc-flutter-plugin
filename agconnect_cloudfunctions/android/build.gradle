@@ -24,14 +24,14 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.1"
+    namespace = "com.huawei.agc.flutter.cloudfunctions"
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
 
     defaultConfig {
         minSdkVersion 18
-        targetSdkVersion 30
+        targetSdkVersion 34
     }
-
     lintOptions {
         disable 'InvalidPackage'
     }
