@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType user_identity.
  *
- * @since 2024-10-06
+ * @since 2024-11-26
  */
 @PrimaryKeys({"union_id"})
 public final class user_identity extends CloudDBZoneObject {
