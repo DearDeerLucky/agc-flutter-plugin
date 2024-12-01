@@ -15,7 +15,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType gallery_user.
  *
- * @since 2024-11-30
+ * @since 2024-12-01
  */
 @PrimaryKeys({"id"})
 public final class gallery_user extends CloudDBZoneObject {
@@ -36,6 +36,8 @@ public final class gallery_user extends CloudDBZoneObject {
     @NotNull
     @DefaultValue(stringValue = "")
     private String create_time;
+
+    private String union_id;
 
     public gallery_user() {
         super(gallery_user.class);
@@ -90,6 +92,14 @@ public final class gallery_user extends CloudDBZoneObject {
 
     public String getCreate_time() {
         return create_time;
+    }
+
+    public void setUnion_id(String union_id) {
+        this.union_id = union_id;
+    }
+
+    public String getUnion_id() {
+        return union_id;
     }
 
 }

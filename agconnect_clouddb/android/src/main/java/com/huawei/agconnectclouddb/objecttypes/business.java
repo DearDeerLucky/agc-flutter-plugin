@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType business.
  *
- * @since 2024-11-30
+ * @since 2024-12-01
  */
 @PrimaryKeys({"id"})
 public final class business extends CloudDBZoneObject {

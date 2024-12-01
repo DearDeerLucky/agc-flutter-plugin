@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType user.
  *
- * @since 2024-11-30
+ * @since 2024-12-01
  */
 @PrimaryKeys({"union_id"})
 public final class user extends CloudDBZoneObject {
