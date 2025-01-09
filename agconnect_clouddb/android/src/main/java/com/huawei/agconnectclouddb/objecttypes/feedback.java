@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType feedback.
  *
- * @since 2024-12-01
+ * @since 2025-01-09
  */
 @PrimaryKeys({"id"})
 public final class feedback extends CloudDBZoneObject {

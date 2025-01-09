@@ -15,7 +15,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType gallery_user_puzzle.
  *
- * @since 2024-12-01
+ * @since 2025-01-09
  */
 @PrimaryKeys({"id"})
 public final class gallery_user_puzzle extends CloudDBZoneObject {
@@ -42,6 +42,8 @@ public final class gallery_user_puzzle extends CloudDBZoneObject {
     private String id_puzzle;
 
     private String union_id;
+
+    private String check_time;
 
     public gallery_user_puzzle() {
         super(gallery_user_puzzle.class);
@@ -113,6 +115,14 @@ public final class gallery_user_puzzle extends CloudDBZoneObject {
 
     public String getUnion_id() {
         return union_id;
+    }
+
+    public void setCheck_time(String check_time) {
+        this.check_time = check_time;
+    }
+
+    public String getCheck_time() {
+        return check_time;
     }
 
 }

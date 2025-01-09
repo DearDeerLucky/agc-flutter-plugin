@@ -15,7 +15,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType gallery_user.
  *
- * @since 2024-12-01
+ * @since 2025-01-09
  */
 @PrimaryKeys({"id"})
 public final class gallery_user extends CloudDBZoneObject {

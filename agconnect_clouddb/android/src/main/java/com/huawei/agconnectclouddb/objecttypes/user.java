@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * Definition of ObjectType user.
  *
- * @since 2024-12-01
+ * @since 2025-01-09
  */
 @PrimaryKeys({"union_id"})
 public final class user extends CloudDBZoneObject {
@@ -43,9 +43,13 @@ public final class user extends CloudDBZoneObject {
 
     private String custom_name;
 
+    @DefaultValue(stringValue = "{\"type\":\"normal\",\"start_time\":\"\",\"end_time\":\"\"}")
+    private String member_info;
+
     public user() {
         super(user.class);
         this.photo_url = "";
+        this.member_info = "{\"type\":\"normal\",\"start_time\":\"\",\"end_time\":\"\"}";
     }
 
     public void setUnion_id(String union_id) {
@@ -142,6 +146,14 @@ public final class user extends CloudDBZoneObject {
 
     public String getCustom_name() {
         return custom_name;
+    }
+
+    public void setMember_info(String member_info) {
+        this.member_info = member_info;
+    }
+
+    public String getMember_info() {
+        return member_info;
     }
 
 }
