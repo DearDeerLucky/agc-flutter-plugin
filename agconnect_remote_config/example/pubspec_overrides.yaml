@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: agconnect_remote_config
+dependency_overrides:
+  agconnect_remote_config:
+    path: ..

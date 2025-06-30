@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: agconnect_auth,agconnect_clouddb
+dependency_overrides:
+  agconnect_auth:
+    path: ../../agconnect_auth
+  agconnect_clouddb:
+    path: ..

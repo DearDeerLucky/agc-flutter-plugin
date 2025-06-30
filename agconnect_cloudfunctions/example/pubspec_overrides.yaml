@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: agconnect_cloudfunctions
+dependency_overrides:
+  agconnect_cloudfunctions:
+    path: ..
